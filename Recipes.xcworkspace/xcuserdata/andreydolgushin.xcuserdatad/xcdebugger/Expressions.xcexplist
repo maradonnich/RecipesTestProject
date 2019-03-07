@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RecipesTableViewController.collectionSkeletonView(_:numberOfRowsInSection:):RecipesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sections[section].numberOfObjects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Recipe.init(recipeInfo:insertInto:):Recipe.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static RecipesTableViewCell.nimbName():RecipesTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RecipesTableViewCell.layoutSubviews():RecipesTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static RecipesTableViewCell.reuseIdentifier():RecipesTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
