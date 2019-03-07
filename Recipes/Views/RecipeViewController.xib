@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeViewController" customModule="Recipes" customModuleProvider="target">
+            <connections>
+                <outlet property="contentScrollView" destination="M4s-hl-osi" id="3xf-ox-b6y"/>
+                <outlet property="difficulty" destination="fMS-fC-73n" id="Lod-s1-JCi"/>
+                <outlet property="imagesCollectionView" destination="K2x-KA-cli" id="HI1-Ob-Sl4"/>
+                <outlet property="imagesPageControl" destination="eHy-R4-X2p" id="xxS-YP-xwy"/>
+                <outlet property="instructions" destination="sRL-yL-lMj" id="eRL-Xm-DSM"/>
+                <outlet property="instructionsLabel" destination="aZg-Rb-Nfh" id="ahR-BN-F2u"/>
+                <outlet property="name" destination="X6c-sd-uur" id="sVA-Ru-uHN"/>
+                <outlet property="recipeDescription" destination="jgf-bC-4BM" id="EEV-fN-ptM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-hl-osi">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="K2x-KA-cli">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="K2x-KA-cli" secondAttribute="height" multiplier="16:9" id="OXq-YE-oba"/>
+                                <constraint firstAttribute="width" constant="375" id="b93-xU-8Ry"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="D0x-NV-hQe">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pan Roasted Chicken with Lemon, Garlic, Green Beans and Red Potatoes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6c-sd-uur">
+                            <rect key="frame" x="20" y="219" width="335" height="43"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pan-roasted chicken with lemon, garlic, green beans and red potatoes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgf-bC-4BM">
+                            <rect key="frame" x="20" y="270" width="335" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZg-Rb-Nfh">
+                            <rect key="frame" x="20" y="319" width="110.5" height="21.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-yL-lMj">
+                            <rect key="frame" x="20" y="348.5" width="335" height="548"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">1. Preheat the oven to 230deg C. Coat a large baking dish or cast-iron skillet with 1 tbs of olive oil. Arrange the lemon slices in a single layer in the bottom of the dish or skillet.&lt;br&gt;2. In a large bowl, combine the remaining oil, lemon juice, garlic, salt and pepper; add the green beans and toss to coat. Using a slotted spoon or tongs, remove the green beans and arrange them on top of the lemon slices. Add the potatoes to the same olive oil mixture and toss to coat. Using a slotted spoon or tongs, arrange the potatoes along the inside edge of the dish or skillet on top of the green beans. Place the chicken in the same bowl with the olive oil mixture and coat thoroughly. Place the chicken, skin side up, in the dish or skillet. Pour any remaining olive oil mixture over the chicken.&lt;br&gt;3. Roast for 50 minutes. Remove the chicken from the dish or skillet. Place the beans and potatoes back in the oven for 10 minutes more or until the potatoes are tender.&lt;br&gt;4. Place a chicken breast on each of 4 serving plates; divide the green beans and potatoes equally. Serve warm.</string>
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-fC-73n" customClass="Indicator" customModule="Recipes" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="904.5" width="375" height="82"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complexity of cooking:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4d-Ki-oNu">
+                                    <rect key="frame" x="20" y="33.5" width="130" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="W4d-Ki-oNu" firstAttribute="leading" secondItem="fMS-fC-73n" secondAttribute="leading" constant="20" symbolic="YES" id="RPb-Uq-lax"/>
+                                <constraint firstAttribute="height" constant="82" id="bQA-UX-FTl"/>
+                                <constraint firstItem="W4d-Ki-oNu" firstAttribute="centerY" secondItem="fMS-fC-73n" secondAttribute="centerY" id="dE8-fM-uej"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-R4-X2p">
+                            <rect key="frame" x="168" y="174" width="39" height="37"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </pageControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="X6c-sd-uur" secondAttribute="trailing" constant="20" symbolic="YES" id="5e4-6o-7oD"/>
+                        <constraint firstItem="sRL-yL-lMj" firstAttribute="top" secondItem="aZg-Rb-Nfh" secondAttribute="bottom" constant="8" symbolic="YES" id="5gh-Jl-dwE"/>
+                        <constraint firstItem="sRL-yL-lMj" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" constant="20" symbolic="YES" id="8Cq-WV-A6l"/>
+                        <constraint firstItem="X6c-sd-uur" firstAttribute="top" secondItem="K2x-KA-cli" secondAttribute="bottom" constant="8" symbolic="YES" id="AIR-A9-iTf"/>
+                        <constraint firstAttribute="trailing" secondItem="K2x-KA-cli" secondAttribute="trailing" id="AVW-mo-T1Q"/>
+                        <constraint firstItem="jgf-bC-4BM" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" constant="20" symbolic="YES" id="Fed-u8-YIN"/>
+                        <constraint firstItem="X6c-sd-uur" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" constant="20" symbolic="YES" id="GmD-U4-10b"/>
+                        <constraint firstAttribute="bottom" secondItem="fMS-fC-73n" secondAttribute="bottom" constant="20" symbolic="YES" id="Ht5-T8-bIJ"/>
+                        <constraint firstItem="fMS-fC-73n" firstAttribute="top" secondItem="sRL-yL-lMj" secondAttribute="bottom" constant="8" symbolic="YES" id="Nt2-Tp-bRb"/>
+                        <constraint firstAttribute="trailing" secondItem="jgf-bC-4BM" secondAttribute="trailing" constant="20" symbolic="YES" id="PbY-cJ-rze"/>
+                        <constraint firstItem="fMS-fC-73n" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" id="Q8U-6A-VhG"/>
+                        <constraint firstAttribute="trailing" secondItem="sRL-yL-lMj" secondAttribute="trailing" constant="20" symbolic="YES" id="cfJ-sP-tMo"/>
+                        <constraint firstItem="eHy-R4-X2p" firstAttribute="bottom" secondItem="K2x-KA-cli" secondAttribute="bottom" id="dhR-9Q-etL"/>
+                        <constraint firstItem="aZg-Rb-Nfh" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" constant="20" symbolic="YES" id="g5N-kC-BqZ"/>
+                        <constraint firstItem="eHy-R4-X2p" firstAttribute="centerX" secondItem="K2x-KA-cli" secondAttribute="centerX" id="gxC-DL-3FQ"/>
+                        <constraint firstItem="jgf-bC-4BM" firstAttribute="top" secondItem="X6c-sd-uur" secondAttribute="bottom" constant="8" symbolic="YES" id="nQO-RL-Icr"/>
+                        <constraint firstItem="K2x-KA-cli" firstAttribute="top" secondItem="M4s-hl-osi" secondAttribute="top" id="tLh-Ga-vpH"/>
+                        <constraint firstItem="aZg-Rb-Nfh" firstAttribute="top" secondItem="jgf-bC-4BM" secondAttribute="bottom" constant="8" symbolic="YES" id="veU-hc-aYd"/>
+                        <constraint firstAttribute="trailing" secondItem="fMS-fC-73n" secondAttribute="trailing" id="xJF-TH-I9F"/>
+                        <constraint firstItem="K2x-KA-cli" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" id="xQE-zS-XRd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="M4s-hl-osi" secondAttribute="top" id="W1a-FJ-vHA"/>
+                <constraint firstItem="M4s-hl-osi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="s6s-mI-Dgz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="M4s-hl-osi" secondAttribute="leading" id="y9O-H2-RuP"/>
+                <constraint firstItem="M4s-hl-osi" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="zBo-I5-l2i"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-117.59999999999999" y="230.73463268365819"/>
+        </view>
+    </objects>
+</document>
